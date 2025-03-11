@@ -1,56 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Vladimir Lojanica</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-138879897-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Vladimir</title>
+    <!-- Link to Google Fonts for pixelated font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Dark background to mimic retro terminal */
+            color: #00ff00; /* Neon green text color */
+            font-family: 'Press Start 2P';
+            overflow: hidden;
+            text-align: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
 
-      gtag('config', 'UA-138879897-1');
-    </script>
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="innercontent">
-        <h1>Pasta alla carbonara</h1>
+        /* Remove underline from the link */
+        a {
+            text-decoration: none;
+        }
+        
+        h1 {
+            font-size: 2vw; /* Relative to viewport width for responsive scaling */
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            animation: neonGlow 2s ease-in-out infinite alternate;
+            text-decoration: none;
+            color: #00ff00; /* Ensure the link text is neon green */
+            white-space: nowrap;
+        }
 
-        <ol>
-          <li>
-            Usa sempre er guanciale. Si volevamo er bacon annavamo in America.
-          </li>
-          <li>
-            Niente parmigiano, solo pecorino. Chi dice metà e metà c'ha quarcosa
-            da nasconne.
-          </li>
-          <li>Nun coce l'ovo. Mejo n'infezione che na frittata.</li>
-          <li>Niente ajo e niente cipolla, nun stai a fa er ragù.</li>
-          <li>Nè ojo, nè buro, nè strutto. Hai da fa' spurgá er guanciale.</li>
-          <li>Niente peperoncino. In Calabria ce vai st'estate.</li>
-          <li>
-            Non usare altre spezie al di fuori der pepe. Si nun te sta bene vai
-            a cena dall'indiano.
-          </li>
-          <li>Chi mette 'a panna dovrebbe annà in galera.</li>
-          <li>Nun dì mai 'carbonara' e 'vegana' nella stessa frase.</li>
-          <li>
-            Tonnarelli, spaghetti, bucatini, rigatoni. Va bene tutto, basta che
-            non fai scoce 'a pasta.
-          </li>
-        </ol>
-      </div>
-    </div>
-  </body>
+        @keyframes neonGlow {
+            0% {
+                text-shadow: 
+                    0 0 1px #00ff00, 
+                    0 0 2px #00ff00, 
+                    0 0 3px #00ff00, 
+                    0 0 7px #00cc00, 
+                    0 0 10px #00cc00, 
+                    0 0 13px #00cc00;
+            }
+            100% {
+                text-shadow: 
+                    0 0 5px #00ff00, 
+                    0 0 10px #00ff00, 
+                    0 0 15px #00ff00, 
+                    0 0 20px #00cc00, 
+                    0 0 25px #00cc00, 
+                    0 0 38px #00cc00;
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 300px) {
+            h1 {
+                font-size: 4vw; /* Reduce font size for medium screens */
+                letter-spacing: 5px; /* Adjust letter-spacing for better fit */
+                white-space: normal;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 4vw; /* Reduce font size for small screens */
+                letter-spacing: 3px; /* Adjust letter-spacing for better fit */
+                white-space: normal;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <a href="mailto:vladimirlojanica@gmail.com">
+        <h1>Владимир</h1>
+    </a>
+</body>
 </html>
